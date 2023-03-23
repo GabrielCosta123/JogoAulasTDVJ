@@ -6,6 +6,10 @@ using System.IO;
 
 namespace Sokoban
 {
+    public enum Direction
+    {
+        Up, Down, Left, Right // 0, 1, 2, 3
+    }
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
@@ -14,10 +18,12 @@ namespace Sokoban
         private int nrLinhas = 0;
         private int nrColunas = 0;
         public char[,] level;
-        private Texture2D player, dot, box, wall; //Load images Texture 
+        private Texture2D dot, box, wall; //Load images Texture 
+        private Texture2D[] player;//Load images Texture 
         int tileSize = 64; //potencias de 2 (operações binárias)
         public Player sokoban;
         public List<Point> boxes;
+        public Direction direction = Direction.Down;
 
         public Game1()
         {
@@ -41,10 +47,11 @@ namespace Sokoban
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("File"); //Use the name of sprite font file ('File')
-            player = Content.Load<Texture2D>("Character4");
-            dot = Content.Load<Texture2D>("EndPoint_Blue");
-            box = Content.Load<Texture2D>("Crate_Brown");
-            wall = Content.Load<Texture2D>("Wall_Brown");
+            player = new Texture2D[4];
+            player[(int)Direction.Down] = Content.Load<Texture2D>("Character4");
+            player[(int)Direction.Up] = Content.Load<Texture2D>("Character7");
+            player[(int)Direction.Left] = Content.Load<Texture2D>("Character1");
+            player[(int)Direction.Right] = Content.Load<Texture2D>("Character2");
 
             // TODO: use this.Content to load your game content here
         }
@@ -55,6 +62,10 @@ namespace Sokoban
                 Exit();
 
             // TODO: Add your update logic here
+            if (Keyboard.GetState().IsKeyDown(Keys.R)) Initialize();//Game Restart
+
+            if (Victory()) Exit(); // FIXME: Change current level
+
             sokoban.Update(gameTime);
 
             base.Update(gameTime);
@@ -105,7 +116,7 @@ namespace Sokoban
             }
             position.X = sokoban.Position.X * tileSize; //posição do Player
             position.Y = sokoban.Position.Y * tileSize; //posição do Player
-            _spriteBatch.Draw(player, position, Color.White); //desenha o Player
+            _spriteBatch.Draw(player[(int)direction], position, Color.White); //desenha o Player
 
 
             _spriteBatch.End();
@@ -161,6 +172,13 @@ namespace Sokoban
             }
 
         }
-
+        public bool Victory()
+        {
+            foreach (Point b in boxes) // pecorrer a lista das caixas
+            {
+                if (level[b.X, b.Y] != '.') return false; // verifica se há caixas sem pontos
+            }
+            return true;
+        }
     }
 }
