@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Daniel/ipca/licenciatura/Tecnicas de Desenvolvimento de Videojogos/git/sokoban_Aula_03/Sokoban/Sokoban/Content/Character4.png</SourceFile>
-  <SourceTime>2023-02-28T13:53:44.7089903+00:00</SourceTime>
-  <DestFile>C:/Daniel/ipca/licenciatura/Tecnicas de Desenvolvimento de Videojogos/git/sokoban_Aula_03/Sokoban/Sokoban/Content/bin/DesktopGL/Content/Character4.xnb</DestFile>
-  <DestTime>2023-03-07T17:30:38.1833039+00:00</DestTime>
+  <SourceFile>C:/Users/gabri/JogoAulasTDVJ/Sokoban/Sokoban/Content/Character4.png</SourceFile>
+  <SourceTime>2023-03-28T16:12:44.3665894+01:00</SourceTime>
+  <DestFile>C:/Users/gabri/JogoAulasTDVJ/Sokoban/Sokoban/Content/bin/DesktopGL/Content/Character4.xnb</DestFile>
+  <DestTime>2023-03-28T16:16:00.5483339+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

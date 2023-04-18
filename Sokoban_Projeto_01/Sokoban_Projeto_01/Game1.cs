@@ -30,7 +30,11 @@ namespace Sokoban_Projeto_01
         private SpriteBatch _spriteBatch;
         private int nrLinhas = 0;
         private int nrColunas = 0;
+<<<<<<< HEAD
+        private SpriteFont font, arial12;
+=======
         private SpriteFont font;
+>>>>>>> 9fa3bed37ff54449df9d10a9666ac18e61f0f638
         private Texture2D dot, box, wall; //Load images Texture 
         //private Texture2D[] player;
         private Player sokoban;
@@ -55,7 +59,7 @@ namespace Sokoban_Projeto_01
             // TODO: Add your initialization logic here
 
             LoadLevel("level1.txt");
-            _graphics.PreferredBackBufferHeight = tileSize * level.GetLength(1); //definição da altura
+            _graphics.PreferredBackBufferHeight = tileSize * (1 + level.GetLength(1)); //definição da altura
             _graphics.PreferredBackBufferWidth = tileSize * level.GetLength(0); //definição da largura
             _graphics.ApplyChanges(); //aplica a atualização da janela
 
@@ -70,6 +74,10 @@ namespace Sokoban_Projeto_01
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             // Use the name of your sprite font file here instead of 'File'.
             font = Content.Load<SpriteFont>("File");
+<<<<<<< HEAD
+            arial12 = Content.Load<SpriteFont>("arial12");
+=======
+>>>>>>> 9fa3bed37ff54449df9d10a9666ac18e61f0f638
             //player = Content.Load<Texture2D>("Character4");
             dot = Content.Load<Texture2D>("EndPoint_Blue");
             box = Content.Load<Texture2D>("Crate_Brown");
@@ -110,6 +118,17 @@ namespace Sokoban_Projeto_01
             base.Draw(gameTime);
 
             _spriteBatch.Begin();
+            // Draw UI
+            _spriteBatch.DrawString(arial12, // Tipo de letra
+                                    "Tempo Decorrido = ",  // Texto
+                                    new Vector2(5, level.GetLength(1) * tileSize + 5), // Posição do texto
+                                    Color.White, // Cor da letra
+                                    0f, //Rotação
+                                    Vector2.Zero, // Origem
+                                    2f, // Escala
+                                    SpriteEffects.None, //FlipHorizontally, //Sprite effect
+                                    0); // Ordenar sprites
+
             _spriteBatch.DrawString(font, "O texto que quiser", new Vector2(0, 40), Color.Black);
             _spriteBatch.DrawString(font, $"Numero de Linhas = {nrLinhas}", new Vector2(0, 0), Color.Black);
             _spriteBatch.DrawString(font, $"Numero de Colunas = {nrColunas}", new Vector2(0, 20), Color.Black);

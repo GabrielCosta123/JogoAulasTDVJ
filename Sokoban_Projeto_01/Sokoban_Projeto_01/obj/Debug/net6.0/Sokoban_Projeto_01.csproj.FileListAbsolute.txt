@@ -39,6 +39,8 @@ C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\git\sokoba
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\git\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\bin\Debug\net6.0\Content\Character8.xnb
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\git\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\bin\Debug\net6.0\Content\Character9.xnb
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\git\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\bin\Debug\net6.0\Content\arial12.xnb
+<<<<<<< HEAD
+=======
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula 06\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\bin\Debug\net6.0\Content\arial12.xnb
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula 06\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\bin\Debug\net6.0\Content\Character1.xnb
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula 06\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\bin\Debug\net6.0\Content\Character10.xnb
@@ -121,3 +123,12 @@ C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula 07\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.pdb
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula 07\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.genruntimeconfig.cache
 C:\Daniel\ipca\licenciatura\Tecnicas de Desenvolvimento de Videojogos\aulas\aula 07\sokoban_Aula_03\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\ref\Sokoban_Projeto_01.dll
+>>>>>>> 9fa3bed37ff54449df9d10a9666ac18e61f0f638
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.csproj.AssemblyReference.cache
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.AssemblyInfoInputs.cache
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.AssemblyInfo.cs
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.csproj.CoreCompileInputs.cache
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.dll
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\refint\Sokoban_Projeto_01.dll
+C:\Users\gabri\JogoAulasTDVJ\Sokoban_Projeto_01\Sokoban_Projeto_01\obj\Debug\net6.0\Sokoban_Projeto_01.pdb
